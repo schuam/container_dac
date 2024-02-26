@@ -29,8 +29,9 @@ help: Makefile
 
 ## image: Build the podman image
 image:
-	podman build \
+	docker build \
 		-t schuam/dac:latest \
 		-t schuam/dac:`git describe --tags --dirty --always --long` \
+		-f Containerfile \
 		.
 
