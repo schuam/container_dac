@@ -32,6 +32,7 @@ image:
 	docker build \
 		-t schuam/dac:latest \
 		-t schuam/dac:`git describe --tags --dirty --always --long` \
+		-t schuam/dac:`git describe --tags --dirty --always` \
 		-f Containerfile \
 		.
 
