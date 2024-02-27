@@ -27,7 +27,7 @@ help: Makefile
 	@echo ""
 
 
-## image: Build the podman image
+## image: Build the image
 image:
 	docker build \
 		-t schuam/dac:latest \
