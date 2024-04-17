@@ -29,6 +29,11 @@ help: Makefile
 
 ## image: Build the image
 image:
+	podman build \
+		-t schuam/dac:latest \
+		-t schuam/dac:`git describe --tags --dirty --always --long` \
+		-t schuam/dac:`git describe --tags --dirty --always` \
+		.
 	docker build \
 		-t schuam/dac:latest \
 		-t schuam/dac:`git describe --tags --dirty --always --long` \

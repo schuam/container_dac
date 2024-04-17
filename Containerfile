@@ -1,4 +1,4 @@
-FROM pandoc/latex:3.1.1-alpine
+FROM docker.io/pandoc/latex:3.1.1-alpine
 
 ARG CROSSREF_RELEASE=v0.3.15.2
 
